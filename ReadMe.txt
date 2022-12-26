@@ -6,3 +6,5 @@ Git next learn
 Git add ReadMe.txt
 我准备要回撤了
 你准备好了没有！
+This is Git Add Test
+Are you Ok?
