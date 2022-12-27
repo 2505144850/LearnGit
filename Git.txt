@@ -1,0 +1,12 @@
+git log
+git log --pretty=oneline
+git reflog
+git add fileName
+git commit -m "说明"
+git checkout -- fileName
+git reset HEAD -- fileName
+git reset 版本号 -- fileName
+git diff fileName
+git diff HEAD -- fileName
+git status
+git rm fileName
