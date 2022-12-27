@@ -10,3 +10,11 @@ git diff fileName
 git diff HEAD -- fileName
 git status
 git rm fileName
+
+git remote add origin git@github.com:GitHub的账户名/项目名.git
+git remote add origin git@server-name:path/repo-name.git; 关联一个远程库时必须给远程库指定一个名字，origin是默认习惯命名
+git push -u origin master  是第一次推送master分支的所有内容
+git push origin master     推送最新修改
+git remote -v
+git remote rm origin
+
