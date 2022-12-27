@@ -1,3 +1,4 @@
 我只是个测试文件
 随时有可能被撤销回去
 git checkout -- NewText.txt
+git reset HEAD NewText.txt
