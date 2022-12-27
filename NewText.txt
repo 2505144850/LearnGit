@@ -2,3 +2,4 @@
 随时有可能被撤销回去
 git checkout -- NewText.txt
 git reset HEAD NewText.txt
+git rm NewText.txt
