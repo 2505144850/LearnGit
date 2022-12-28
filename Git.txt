@@ -72,3 +72,14 @@ git pull                     抓取                        从远程分支抓取
 在本地创建和远程分支对应的分支，使用   git checkout -b <branch-name> origin/<branch-name>   本地和远程分支的名称最好一致；
 建立本地分支和远程分支的关联，使用     git branch --set-upstream-to=origin/<branch-name> <branch-name>
 从远程抓取分支，使用  git pull  如果有冲突，要先处理冲突。
+
+git tag <tag-name>                                      创建一个新的标签
+git tag                                                 查看所有标签
+git show <tag-name>                                     查看标签信息
+git tag -a <tag-name> -m "详细说明内容" <commit-id>     给指定的某个commit id打上标签，-a 指定标签名称，-m 指定说明文字
+git tag -d <tag-name>                                   删除指定标签
+git push origin <tag-name>                              推送指定标签到远程
+git push origin --tags                                  推送所有标签到远程
+git push origin :refs/tags/<tag-name>                   删除一个远程标签     先通过git tag -d <tag-name>从本地删除
+
+
