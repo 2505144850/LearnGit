@@ -13,3 +13,5 @@ To day is new Days......
 2022-12-27 16:02
 2022-12-27 17:07
 2022-12-27 17:22
+10:26 2022-12-28 First Working
+This is Bug Learn
