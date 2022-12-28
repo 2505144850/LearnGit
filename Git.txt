@@ -41,3 +41,5 @@ git log --graph --pretty=oneline                        查看日志
 
 git merge --no-ff -m "合并分支，禁用Fast forward，并添加说明" dev
 git merge --no-ff -m "情况说明 信息内容" <name>                     强制禁用Fast forward模式，Git会在merge时生成一个新的commit，这样从分支历史上就可以看出分支信息
+
+git stash             可以把当前工作现场“储藏”起来，等以后恢复现场后继续工作，此时用git status来查看工作区，就是干净的。这时可以放心地创建新的分支来修复BUG
