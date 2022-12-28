@@ -51,3 +51,7 @@ git stash pop         恢复的同时把stash内容也删除了
 
 git cherry-pick <commit 编号>  复制一个特定的提交到当前分支 避免重复劳动
 
+git remote                   查看远程库信息
+git remote -v                查看远程库详细信息，显示抓取fetch和推送push的地址，没有权限则看不到地址。
+git push origin master       推送master分支，把该分支上所有本地提交推送到远程库。推送时要指定本地分支，这样Git就会把该分支推送到远程库对应的远程分支上
+git push origin dev          要推送其他分支，比如 dev
