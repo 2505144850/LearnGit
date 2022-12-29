@@ -82,4 +82,14 @@ git push origin <tag-name>                              推送指定标签到远
 git push origin --tags                                  推送所有标签到远程
 git push origin :refs/tags/<tag-name>                   删除一个远程标签     先通过git tag -d <tag-name>从本地删除
 
-
+GitHub 和 Gitee
+SSH公钥：.ssh/id_rsa.pub 文件
+git remote -v                                                           查看远程库信息
+git remote rm origin                                                    删除远程库origin信息
+                     同时关联多个远程库时，注意需要使用不同的名称来标识不同的远程库
+git remote add github git@github.com:2505144850/LearnGit.git            关联远程库，远程库的名字叫github
+git remote add gitee git@gitee.com:2505144850/LearnGit.git              关联远程库，远程库的名字叫gitee
+                     关联好后推送需要注意区分不同的名称
+git push github master
+git push gitee master
+                     来实现同一个本地库同时与多个远程库互相同步
