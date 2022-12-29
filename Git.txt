@@ -93,3 +93,24 @@ git remote add gitee git@gitee.com:2505144850/LearnGit.git              关联�
 git push github master
 git push gitee master
                      来实现同一个本地库同时与多个远程库互相同步
+
+在Git工作区的根目录下创建一个特殊的.gitignore文件，然后把要忽略的文件名填写进去，Git会自动忽略这些文件。
+*.后缀名
+git add -f <fileName>             添加一个被忽略的文件
+!<filename>                       排除指定文件在规则之外
+
+git config --global alias.<别名> 'git 命令'          配置快捷命令
+git config --global user.name "Your Name"            配置当前用户名    使用 --global 参数将针对当前系统登录用户生效
+git config --global user.email "your name@email.com" 配置当前用户Email
+
+git diff                          比较工作区和暂存区的修改
+git diff HEAD                     比较工作区和上一次commit后的修改
+git diff --cached                 比较暂存区和上一次commit后的修改
+
+git log -<limit>                  限制log的显示数据。例如：“git log -5” 仅显示最新5条commit
+git log --oneline		  每行显示一条commit
+git log --author="<pattern>"	  按提交者名字搜索并显示commit
+git log --grep="<pattern"         按指定内容搜索并显示commit
+git log <since>..<until>	  显示指定范围的commit。范围参数可以是commit ID 、分支名称 、HEAD或任意相对位置
+git log -- <file>                 仅显示包含指定文件修改的commit
+git log --graph                   使用 --graph 参数显示图形化的branch 信息
