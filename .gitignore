@@ -1,0 +1,3 @@
+# My Configuration 我的自定义配置排除文件后缀
+*.jet
+*.hp
